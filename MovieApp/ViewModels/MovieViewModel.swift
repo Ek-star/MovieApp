@@ -11,7 +11,7 @@ class MovieViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
 
-        let apiKey = "72b1b7775c97a3fc05da67b9674cf90c"
+        let apiKey = "INSERT_YOUR_API_KEY" // -> Use your API Key
         guard let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(apiKey)&language=en-US&page=1") else {
             self.errorMessage = "Invalid URL"
             self.isLoading = false
