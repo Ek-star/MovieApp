@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2EDA645A2DF98AB90007C7AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA64592DF98AB90007C7AB /* GoogleService-Info.plist */; };
+		2EDA649C2DF98E420007C7AB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2EDA649B2DF98E420007C7AB /* FirebaseAuth */; };
+		2EDA649E2DF98E420007C7AB /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2EDA649D2DF98E420007C7AB /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2EB466D12DF1ADDC00AD2CAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,25 @@
 		2EB466C02DF1ADD900AD2CAC /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB466D02DF1ADDC00AD2CAC /* MovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB466DA2DF1ADDC00AD2CAC /* MovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDA64592DF98AB90007C7AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2EB466EE2DF1BE8C00AD2CAC /* Exceptions for "MovieApp" folder in "MovieApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2EB466BF2DF1ADD900AD2CAC /* MovieApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2EB466C22DF1ADD900AD2CAC /* MovieApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2EB466EE2DF1BE8C00AD2CAC /* Exceptions for "MovieApp" folder in "MovieApp" target */,
+			);
 			path = MovieApp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDA649E2DF98E420007C7AB /* FirebaseCore in Frameworks */,
+				2EDA649C2DF98E420007C7AB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +101,7 @@
 				2EB466D32DF1ADDC00AD2CAC /* MovieAppTests */,
 				2EB466DD2DF1ADDC00AD2CAC /* MovieAppUITests */,
 				2EB466C12DF1ADD900AD2CAC /* Products */,
+				2EDA64592DF98AB90007C7AB /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +135,8 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
+				2EDA649B2DF98E420007C7AB /* FirebaseAuth */,
+				2EDA649D2DF98E420007C7AB /* FirebaseCore */,
 			);
 			productName = MovieApp;
 			productReference = 2EB466C02DF1ADD900AD2CAC /* MovieApp.app */;
@@ -195,6 +220,9 @@
 			);
 			mainGroup = 2EB466B72DF1ADD900AD2CAC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2EDA649A2DF98E420007C7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2EB466C12DF1ADD900AD2CAC /* Products */;
 			projectDirPath = "";
@@ -212,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDA645A2DF98AB90007C7AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +428,7 @@
 				DEVELOPMENT_TEAM = VJ8QYZKSZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +458,7 @@
 				DEVELOPMENT_TEAM = VJ8QYZKSZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +589,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EDA649A2DF98E420007C7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EDA649B2DF98E420007C7AB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EDA649A2DF98E420007C7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2EDA649D2DF98E420007C7AB /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EDA649A2DF98E420007C7AB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EB466B82DF1ADD900AD2CAC /* Project object */;
 }
