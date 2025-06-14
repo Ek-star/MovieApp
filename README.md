@@ -4,6 +4,7 @@
 
 ## ✨ Fitur Utama
 
+- 📨 **Login**: User dapat membuat akun (Sign-Up) dan masuk ke akun (Log-in) karena aplikasi ini sudah dihubungkan ke Firebase Database
 - 📄 **Detail Film**: Sinopsis, poster, tanggal rilis, dan rating
 - ⭐ **Watchlist**: Simpan film favorit
 - 🧭 **Navigasi Modern**: Tab Bar dan Navigation Stack
