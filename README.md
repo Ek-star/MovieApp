@@ -21,13 +21,9 @@
 
 ## 📸 Cuplikan Layar
 
-### Welcome & Auth Views
-
 | Welcome Page View | Premium View | Login View |
 |-------------------|--------------|------------|
 | <img src="https://github.com/user-attachments/assets/b830430c-d2eb-479c-a408-a0a1a9db12f6" width="200"/> | <img src="https://github.com/user-attachments/assets/aa93fb2b-2bea-4a53-9805-7a597940475c" width="200"/> | <img src="https://github.com/user-attachments/assets/13616d22-4fae-4bc3-bbcb-f27ba1136f01" width="200"/> |
-
-### Main App Views
 
 | Sign-up View | Movie List View | Movie Detail View |
 |--------------|-----------------|-------------------|
